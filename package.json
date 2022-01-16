@@ -1,0 +1,41 @@
+{
+  "name": "oglify-meteor",
+  "private": true,
+  "version": "0.0.1",
+  "description": "The open source OGLify meteor app",
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oglify/oglify.git"
+  },
+  "keywords": [
+    "oglify"
+  ],
+  "author": "brendansafr",
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "bugs": {
+    "url": "https://github.com/oglify/oglify/issues"
+  },
+  "homepage": "https://github.com/oglify/oglify/wiki",
+  "files": [
+    "LICENSE.txt",
+    "README.md"
+  ],
+  "dependencies": {
+    "@babel/runtime": "^7.15.4",
+    "meteor-node-stubs": "^1.1.0",
+    "@oglify/pfrpg": "file://./../oglify-pfrpg/pfrpg"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
