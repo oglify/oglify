@@ -1,1 +1,1 @@
-console.log(`Greetings from ${module.id}!`);
+import "meteor/oglify:oglify";
